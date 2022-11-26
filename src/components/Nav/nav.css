@@ -1,0 +1,25 @@
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color:#fff; */
+}
+.dld{
+    width: 200px;
+}
+.pdp{
+    width: 100px;
+   
+}
+@media screen and (max-width:600px){
+    .dld{
+        width: 150px;
+    }
+    .pdp{
+        width: 70px
+    }
+    
+}

@@ -1,0 +1,62 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(/public/d2.jpg);
+    background-size:auto;
+    background-position: center;
+  }
+  .content1{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#fff;
+  }
+  .content1 h1{
+    font-size: 50px;
+    margin-top: 80px;
+  }
+  .content1 p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  .button1{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #f51b2a;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  span{
+    background: #f70b0b;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .button1:hover span{
+    width: 100%;
+  }
+  .button1:hover{
+    border: none;
+  }
+  
+  @media screen and (max-width: 600px){
+    .content1 h1{
+      font-size: 30px;
+      margin-top: 90px;
+    }
+  }
