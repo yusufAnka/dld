@@ -2,10 +2,15 @@ import React, {useState} from "react";
 import loginImg from "../../public/d1.jpg";
 import './style.scss';
 import Card from '../Card/Card';
+import Flyer from "../Flyer/Flyer";
 
 const Register = () => {
-
   const [modal, setModal] = useState(false);
+  // function handleClick(){
+    
+  //   const [name, setName] = useState("");
+  // }
+  
   
     return (
       <div className="base-container">
