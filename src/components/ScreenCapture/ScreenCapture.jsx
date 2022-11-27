@@ -10,8 +10,8 @@ export default class ScreenCapture extends React.Component {
       const { cropPositionTop, cropPositionLeft, cropWidth, cropHeight } = {
         cropPositionTop: 0,
         cropPositionLeft: 0,
-        cropWidth: 860,
-        cropHeight: 860
+        cropWidth:  2400,
+        cropHeight: 1600
       };
       console.log("this.ref.current", this.ref.current)
   
