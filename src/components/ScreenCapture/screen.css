@@ -10,6 +10,25 @@
     border-radius: 8px;
     font-size: 20px;
     cursor: pointer;
-    bottom: 10rem;
+    bottom: 7rem;
     left: 45rem;
 }
+
+@media only screen and (min-width : 320px) and (max-width:600px) {
+    .screenBtn{
+        position: absolute;
+        z-index: 1000;
+        width: 150px;
+        height: 45px;
+        /* margin: 10px; */
+        border: none;
+        background-color: cornflowerblue;
+        color: white;
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+        bottom: 6rem;
+        left: 8rem;
+    }
+
+  }

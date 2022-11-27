@@ -39,7 +39,7 @@ export default class ScreenCapture extends React.Component {
       return (
         <div>
           {/* {children} */}
-          <button className="screenBtn" onClick={this.handleClickTakeScreenShot}>Download</button>
+          <button className="screenBtn" onClick={this.handleClickTakeScreenShot}>Download Flyer</button>
           <div
             id="#screenshot"
             // style={{ position: "relative", left: "-1000px" }}

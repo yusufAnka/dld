@@ -26,6 +26,31 @@
     margin: auto;
     border-radius: 20px;
   }
+  .name{
+    font-weight: 600;
+    /* border: 1px solid green; */
+    text-align: center;
+    padding-top: 14px;
+    width: 260px;
+    height: 30px;
+    margin-left: 25rem;
+    line-height: 2;
+    margin-bottom: 3rem;
+  }
+  .vote{
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-style: italic;
+    /* background-color: #000; */
+    color: rgb(206, 16, 16);
+    width: 80px;
+    height: 20px;
+    margin-left: 30.4rem;
+    border-radius: 20px;
+    border: 3px solid green;
+    font-size: 20px;
+  }
   .text{
     text-align: center;
   }
@@ -33,64 +58,91 @@
     border: 10px solid green;
     border-style: double;
     border-radius: 5px;
+    background-image: url(../../public/d5.jpg);
 
   }
   .body{
     display: flex;
+    margin-top: -3rem;
     justify-content: space-between;
     padding: 7px;
   }
   .left{
-    margin-top: 1rem;
+    margin-left: -2rem;
   }
-  .cmt{
-
+  .right{
+    margin-left: 15rem;
   }
-  
-  
-  .modalContainer .body {
-    flex: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.7rem;
-    text-align: center;
+  .dauda{
+    font-size: large;
+    font-weight: 800;
+    font-style: oblique;
+    font-family: sans-serif;
   }
-  
-  .modalContainer .footer {
-    flex: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .gov{
+    font-size: 23px;
+    font-weight: 500;
+    color: #021d02;
+    font-style: bold;
   }
   
-  .modalContainer .footer button {
-    width: 150px;
-    height: 45px;
-    margin: 10px;
-    border: none;
-    background-color: cornflowerblue;
-    color: white;
-    border-radius: 8px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  #cancelBtn {
-    background-color: crimson;
-  }
 
   @media only screen and (min-width : 320px) and (max-width:600px) {
     .cardBody{
       width: 330px;
       height: 410px;
+      background-size:80%;
+      background-position:bottom;
+      /* background-image: none; */
+
+      /* background-position: bottom; */
   
     }
     .better{
       font-size: 20px;
       margin-top: 2px;
     }
+    .body{
+      /* background-image: url(../../public/d5.jpg); */
+      background-size:50%;
+      background-position:bottom;
+      /* background-image: none; */
+    }
+    .left{
+      margin-left: 0rem;
+    }
     .right{
-      font-size: 20px;
+      margin-left: 3rem;
+    }
+    .dld2{
+      width: 160px;
+      height: 40px;
+    }
+    .pdp{
+      width: 50px;
+      height: 50px;
+    }
+    .name{
+      font-weight: 500;
+      /* border: 1px solid green; */
+      text-align: center;
+      padding-top: 10px;
+      width: 260px;
+      height: 30px;
+      margin-left: 7.6rem;
+      font-size: 16px;
+      line-height: 1.3;
+    }
+    .vote{
+      text-align: center;
+      padding-top: 5px;
+      font-style: italic;
+      /* background-color: #000; */
+      color: rgb(206, 16, 16);
+      width: 100px;
+      height: 20px;
+      margin:auto;
+      border-radius: 20px;
+      border: 3px solid green;
     }
   }

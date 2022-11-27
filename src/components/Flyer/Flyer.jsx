@@ -1,6 +1,6 @@
 import React from "react";
 import "./flyer.css";
-import IMG from '../../public/banner2.png';
+import IMG from '../../public/banner.jpeg';
 import IMG2 from '../../public/pdp.png';
 import Profile from '../ProfileImg/Profile';
 
@@ -14,19 +14,22 @@ function Flyer() {
             <img className='pdp' src={IMG2} alt="banner" />
           </div>
           <div className="center">
-              <p> MY NAME IS </p>
+              <h4> MY NAME IS </h4>
           </div>
+          <h2 className="name">{}Yusuf Muhammad <br/> And I Will</h2>
+          <br/>
+          <p className="vote">VOTE</p>
+          
           <div className="body">
             <div className="left">
+            
               <Profile />
-              <i className="better">Dauda For a better Zamfara</i>
+              <i className="better">Dauda For a <br />better Zamfara</i>
             </div>
             <div className="right">
-             <p>{}Yusuf Muhammad</p>
-             <p>AND I WILL VOTE</p>
-             <p>DAUDA LAWAN DARE</p>
+             <p className="dauda">DAUDA LAWAN DARE</p>
              <b>For</b>
-             <p>Governor 2023</p>
+             <p className="gov">Governor 2023</p>
 
             </div>
             
