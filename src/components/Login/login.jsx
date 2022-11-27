@@ -48,9 +48,10 @@ const Login = () =>  {
           </div>
         </div>
         <div className="footer">
-          <button type="button" className="btnlogin"><span></span>
+          <a href="/register"><button type="button" className="btnlogin"><span></span>
             Login
           </button>
+          </a>
         </div>
       </div>
     );

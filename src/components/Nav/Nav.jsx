@@ -6,7 +6,7 @@ import './nav.css'
 const Nav = () => {
   return (
     <div className='navbar'>
-        <a href="/dashboard"><img className='dld4' src={IMG} alt="banner" /></a>
+        <a href="/"><img className='dld4' src={IMG} alt="banner" /></a>
         <img className='pdp4' src={IMG2} alt="banner" />
     </div>
   )
