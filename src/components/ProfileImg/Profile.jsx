@@ -31,8 +31,8 @@ const Profile = () => {
         <div className='profile'>
             <img 
             style={{
-                width: "200px",
-                height: "200px",
+                width: "150px",
+                height: "150px",
                 borderRadius: "50%",
                 objectFit: "cover",
                 border: "4px solid green",
@@ -41,8 +41,6 @@ const Profile = () => {
             src={profileFinal.length ? profileFinal : img } 
             alt='' 
             />
-
-            <label htmlFor="" className='text1'>Upload your Picture here</label>
 
             <Dialog
                 className='dialog'

@@ -4,14 +4,10 @@ import IMG from '../../public/banner2.png';
 import IMG2 from '../../public/pdp.png';
 import Profile from '../ProfileImg/Profile';
 
-function Flyer({ closeModal }) {
+function Flyer() {
   return (
     <>
     <div>
-        
-        <div className="title">
-          <h1>You can Print your Card</h1>
-        </div>
         <div className="cardBody">
           <div className='headers'>
             <img className='dld2' src={IMG} alt="banner" />
@@ -23,7 +19,7 @@ function Flyer({ closeModal }) {
           <div className="body">
             <div className="left">
               <Profile />
-              <i>Dauda For a better Zamfara</i>
+              <i className="better">Dauda For a better Zamfara</i>
             </div>
             <div className="right">
              <p>{}Yusuf Muhammad</p>

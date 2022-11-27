@@ -7,8 +7,8 @@ import img4  from "../../public/banner2.png";
 const Footer = () => {
   return (
     <footer>
-        <a href="https://twitter.com/Youth4Dauda"><img className='footer_banner' src={img4} /></a>
-        <a href="https://twitter.com/Youth4Dauda"><BsTwitter className="twitter"/></a>
+        <a href="https://twitter.com/gamjinkowa"><img className='footer_banner' src={img4} /></a>
+        <a href="https://twitter.com/gamjinkowa"><BsTwitter className="twitter"/></a>
         {/* <div className='footer__socials'> */}
           <a href="https://yumtech.vercel.app/" target="_blank">&copy; Yumtech </a>
         {/* </div> */}

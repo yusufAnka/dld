@@ -21,17 +21,6 @@ function Card({ closeModal }) {
           <h1>You can Print your Card</h1>
         </div>
         <ScreenCapture />
-        {/* <div className="footer">
-          <button
-            onClick={() => {
-              closeModal(false);
-            }}
-            id="cancelBtn"
-          >
-            Cancel
-          </button>
-          <button>Print</button>
-        </div> */}
       </div>
     </div>
 
