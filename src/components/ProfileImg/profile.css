@@ -70,3 +70,43 @@
    font-size: 20px;
    cursor: pointer;
 }
+@media only screen and (min-width : 320px) and (max-width:600px) {
+    .crop{
+        align-items: center; 
+        width: 50px;
+        height: 45px;
+        margin: 10px;
+        border: none;
+        background-color: rgb(234, 240, 235);
+        color: white;
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+     }
+     .confirmationContent{
+        width: 100px;
+        height: 150px;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: 0 0 0 50vmax rgba(0,0,0,0.4);
+        display: grid;
+        grid-template-columns: column;
+        padding-left: 1em;
+        padding-top: 1em; 
+        padding-right: 1em;
+        padding-bottom: 10em;
+        left: 20%;
+        bottom: 100%;
+        top: 100%;
+        right: 20%;
+        z-index: 999;
+        position: fixed;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 4px;
+        padding: 1rem;
+      
+    }
+}
