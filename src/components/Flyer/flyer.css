@@ -1,44 +1,4 @@
-.modalBackground {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(200, 200, 200);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .modalContainer {
-    width: 700px;
-    height: 600px;
-    border-radius: 12px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-  }
-  
-  .modalContainer .title {
-    display: inline-block;
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .titleCloseBtn {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .titleCloseBtn button {
-    background-color: transparent;
-    border: none;
-    font-size: 25px;
-    cursor: pointer;
-  }
+
   .title{
     font-size: 10px;
     margin-top: 2px;
@@ -71,6 +31,7 @@
   }
   .cardBody{
     border: 10px solid green;
+    border-style: double;
     border-radius: 5px;
   }
   .body{
@@ -82,7 +43,7 @@
     margin-top: 1rem;
   }
   .cmt{
-    
+
   }
   
   

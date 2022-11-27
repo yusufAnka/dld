@@ -6,8 +6,8 @@ import './nav.css'
 const Nav = () => {
   return (
     <div className='navbar'>
-        <img className='dld' src={IMG} alt="banner" />
-        <img className='pdp' src={IMG2} alt="banner" />
+        <img className='dld4' src={IMG} alt="banner" />
+        <img className='pdp4' src={IMG2} alt="banner" />
     </div>
   )
 }

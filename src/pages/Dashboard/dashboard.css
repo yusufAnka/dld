@@ -54,9 +54,9 @@
     border: none;
   }
   
-  @media screen and (max-width: 600px){
+  @media only screen and (min-width : 320px) and (max-width:600px){
     .content1 h1{
-      font-size: 30px;
+      font-size: 26px;
       margin-top: 90px;
     }
   }

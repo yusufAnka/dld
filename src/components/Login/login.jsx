@@ -20,7 +20,7 @@ const Login = () =>  {
           <div className="form">
             <div className="form-group">
               <label htmlFor="username">Username</label>
-              <input type="text" name="username" placeholder="username" />
+              <input type="text" name="username" placeholder="username" className="input" />
               {formData.email.length === 0 ? (
                 <span style={{ color: "red" }}></span>
             ) :

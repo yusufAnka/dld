@@ -1,16 +1,16 @@
 .navbar{
     width: 85%;
-    margin: auto;
+    margin-top: 1rem;
     padding: 35px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     /* background-color: rgb(10, 60, 91); */
 }
 .navLogo{
     color: #fff;
     font-weight: 800;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     font-family: sans-serif;
     font-style: italic;
     font-size: larger;
@@ -18,7 +18,7 @@
 .navbar ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 15px 20px;
     position: relative;
 }
 
@@ -39,4 +39,20 @@
 }
 .navbar ul li:hover::after{
     width: 100%;
+}
+@media only screen and (min-width : 320px) and (max-width:600px){
+    .navLogo{
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .navbar{
+        width: 95%;
+        margin-top: 20px;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 12px;
+    }
 }

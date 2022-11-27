@@ -7,7 +7,10 @@ const RegisterPage = ({ setOpenModal }) => {
   return (
     <div>
         <Nav />
+        <div className="log">
         <Register />
+        </div>
+        
     </div>
   )
 }
