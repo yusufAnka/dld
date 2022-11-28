@@ -15,7 +15,7 @@
   :root {
     --card-width: 100;
     --card-height:80;
-    --flyer-width : 340;
-  --flyer-height: 350;
+    --flyer-width : 100;
+  --flyer-height: 80;
   }
 }
