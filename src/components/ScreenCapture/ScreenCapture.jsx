@@ -38,7 +38,7 @@ const ScreenCapture = ({name}) => {
   
         const a = document.createElement("a");
         a.href = croppedCanvas.toDataURL();
-        a.download = "receipt.png";
+        a.download = "receipt.jpg";
         a.click();
       });
     };
