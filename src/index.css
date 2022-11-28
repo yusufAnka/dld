@@ -13,8 +13,8 @@
 
 @media only screen and (min-width : 320px) and (max-width:600px) {
   :root {
-    --card-width: 200;
-    --card-height:180;
+    --card-width: 100;
+    --card-height:80;
     --flyer-width : 340;
   --flyer-height: 350;
   }
