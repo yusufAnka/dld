@@ -3,7 +3,7 @@ import "./card.css";
 import ScreenCapture from '../ScreenCapture/ScreenCapture';
 import Flyer from '../Flyer/Flyer'
 
-function Card({ closeModal }) {
+function Card({ closeModal, name }) {
   return (
     <>
     <div className="modalBackground">
@@ -20,7 +20,7 @@ function Card({ closeModal }) {
         <div className="title">
           <h1>You can Print your Card</h1>
         </div>
-        <ScreenCapture />
+        <ScreenCapture name={name} />
       </div>
     </div>
 

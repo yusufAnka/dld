@@ -6,10 +6,12 @@ import Flyer from "../Flyer/Flyer";
 
 const Register = () => {
   const [modal, setModal] = useState(false);
-  // function handleClick(){
-    
-  //   const [name, setName] = useState("");
-  // }
+    const [name, setName] = useState("");
+  function handleChange(e){
+    e.preventDefault()
+
+    setName(e.target.value)
+  }
   
   
     return (
@@ -21,7 +23,7 @@ const Register = () => {
           </div>
           <div className="form">
             <div className="form-group">
-              <input type="text" name="fullname" placeholder="Full Name" />
+              <input type="text" name="name" value={name} onChange={(e) => handleChange(e)} placeholder="Full Name" />
             </div>
             <div className="form-group">
               <input type="text" name="ward" placeholder="Ward" />
@@ -44,7 +46,7 @@ const Register = () => {
           <button type="button" className="btnlogin" onClick= {() => setModal(true)}>
             Submit
           </button>
-          {modal && <Card closeModal={setModal}/>}
+          {modal && <Card name={name} closeModal={setModal}/>}
         </div>
       </div>
     );

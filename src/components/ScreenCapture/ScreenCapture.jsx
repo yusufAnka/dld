@@ -3,19 +3,29 @@ import html2canvas from "html2canvas";
 import Flyer from "../Flyer/Flyer";
 import './screen.css';
 
-export default class ScreenCapture extends React.Component {
-    ref = React.createRef();
+const ScreenCapture = ({name}) => {
+    let ref = React.createRef();
+    const [width, setWidth] = React.useState()
+    const [height, setHeight] = React.useState()
+
+    React.useEffect(() => {
+      // let w = 
+      setWidth(getComputedStyle(document.documentElement).getPropertyValue('--flyer-width'));
+      setHeight(getComputedStyle(document.documentElement).getPropertyValue('--flyer-height'));
+
+    }, [])
+
   
-    handleClickTakeScreenShot = async() => {
+    let handleClickTakeScreenShot = async() => {
       const { cropPositionTop, cropPositionLeft, cropWidth, cropHeight } = {
         cropPositionTop: 0,
         cropPositionLeft: 0,
-        cropWidth:  2400,
-        cropHeight: 1600
+        cropWidth:  width,
+        cropHeight: height
       };
-      console.log("this.ref.current", this.ref.current)
+      console.log("ref.current", ref.current)
   
-      await html2canvas(this.ref.current).then(canvas => {
+      await html2canvas(ref.current).then(canvas => {
         let croppedCanvas = document.createElement("canvas");
         let croppedCanvasContext = croppedCanvas.getContext("2d");
   
@@ -32,22 +42,22 @@ export default class ScreenCapture extends React.Component {
         a.click();
       });
     };
-  
-    render() {
-      // const { children } = this.props;
+
+      // const { children } = props;
   
       return (
         <div>
           {/* {children} */}
-          <button className="screenBtn" onClick={this.handleClickTakeScreenShot}>Download Flyer</button>
+          <button className="screenBtn" onClick={handleClickTakeScreenShot}>Download Flyer</button>
           <div
             id="#screenshot"
             // style={{ position: "relative", left: "-1000px" }}
-            ref={this.ref}
+            ref={ref}
           >
-            <Flyer />
+            <Flyer name={name} />
           </div>
         </div>
       );
     }
-  }
+
+    export default ScreenCapture;
