@@ -11,11 +11,11 @@
   --flyer-width : 90%;
   --flyer-height: 100%;
 
-  --profile-width: 200px;
-  --profile-height: 200px;
+  --profile-width: 180px;
+  --profile-height: 180px;
   
-  --resize-width: 500px;
-  --resize-height: 500px;
+  --resize-width: 180px;
+  --resize-height: 180px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -26,8 +26,8 @@
     --flyer-width : 95%;
     --flyer-height:90%;
 
-    --profile-height: 50px;
-    --profile-width: 50px
+    --profile-width: 120px;
+    --profile-height: 120px;
   }
 }
 
@@ -36,11 +36,11 @@
     --card-width: 80%;
     --card-height:60%;
 
-    --flyer-width : 90%;
-    --flyer-height:100%;
+    --flyer-width : 98%;
+    --flyer-height:300px;
 
-    --profile-height: 50px;
-    --profile-width: 50px
+    --profile-width: 90px;
+    --profile-height: 90px;
   }
 }
 

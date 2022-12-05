@@ -12,6 +12,15 @@ const Profile = () => {
     const [src, setSrc] = useState(false);
     const [profile, setProfile] = useState([]);
     const [preview, setPreview] = useState(false);
+    const [width, setWidth] = React.useState()
+    const [height, setHeight] = React.useState()
+
+    React.useEffect(() => {
+      // let w = 
+      setWidth(getComputedStyle(document.documentElement).getPropertyValue('--profile-width'));
+      setHeight(getComputedStyle(document.documentElement).getPropertyValue('--profile-height'));
+
+    }, [])
 
     const profileFinal = profile.map((item) => item.preview);
 
@@ -26,13 +35,14 @@ const Profile = () => {
         setProfile([...profile, {preview}]);
         setImageCrop(false)
     }
+    
   return (
     <div className='content'>
         <div className='profile'>
             <img 
             style={{
-                width: "180px",
-                height: "180px",
+                width: width,
+                height: height,
                 borderRadius: "50%",
                 objectFit: "cover",
                 border: "4px solid green",
