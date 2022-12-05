@@ -14,6 +14,9 @@ const Profile = () => {
     const [preview, setPreview] = useState(false);
     const [width, setWidth] = React.useState()
     const [height, setHeight] = React.useState()
+    const [w, setW] = React.useState()
+    const [h, setH] = React.useState()
+
 
     React.useEffect(() => {
       // let w = 
@@ -21,6 +24,12 @@ const Profile = () => {
       setHeight(getComputedStyle(document.documentElement).getPropertyValue('--profile-height'));
 
     }, [])
+
+    React.useEffect(() => {
+        setW(getComputedStyle(document.documentElement).getPropertyValue('--avater-width'));
+        setH(getComputedStyle(document.documentElement).getPropertyValue('--avater-height'));
+  
+      }, [])
 
     const profileFinal = profile.map((item) => item.preview);
 
@@ -34,6 +43,7 @@ const Profile = () => {
     const saveCropImage = () => {
         setProfile([...profile, {preview}]);
         setImageCrop(false)
+        
     }
     
   return (
@@ -64,8 +74,8 @@ const Profile = () => {
                 >
                     <div className='confirmationContent'>
                         <Avatar
-                            width={500}
-                            height={400}
+                            width={300}
+                            height={300}
                             onCrop={onCrop}
                             onClose={onClose}
                             src={src}
@@ -73,13 +83,13 @@ const Profile = () => {
                             backgroundColor={"#474649"}
                         />
                         <div >
-                            <div className='save'>
+                    
                                 <button className='crop'
                                     onClick={saveCropImage}
                                     text="save"
-                                /> Save
+                                />
                                 <button/>
-                            </div>
+                      
                         </div>
                     </div>
 

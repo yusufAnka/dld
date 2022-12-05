@@ -16,6 +16,9 @@
   
   --resize-width: 180px;
   --resize-height: 180px;
+
+  --avater-width: 500px;
+  --avater-height: 300px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -26,8 +29,11 @@
     --flyer-width : 95%;
     --flyer-height:90%;
 
-    --profile-width: 120px;
-    --profile-height: 120px;
+    --profile-width: 180px;
+    --profile-height: 180px;
+
+    --avater-width: 180px;
+    --avater-height: 180px;
   }
 }
 
@@ -41,6 +47,9 @@
 
     --profile-width: 90px;
     --profile-height: 90px;
+
+    --avater-width: 80px;
+    --avater-height: 80px;
   }
 }
 

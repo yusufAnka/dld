@@ -10,8 +10,8 @@ const ScreenCapture = ({name}) => {
 
     React.useEffect(() => {
       // let w = 
-      setWidth(getComputedStyle(document.documentElement).getPropertyValue('--flyer-width'));
-      setHeight(getComputedStyle(document.documentElement).getPropertyValue('--flyer-height'));
+      setWidth(getComputedStyle(document.documentElement).getPropertyValue('--flyer-width').replace('px',''));
+      setHeight(getComputedStyle(document.documentElement).getPropertyValue('--flyer-height').replace('px', ''));
 
     }, [])
 
