@@ -1,7 +1,6 @@
 import React from "react";
 import "./card.css";
 import ScreenCapture from '../ScreenCapture/ScreenCapture';
-import Flyer from '../Flyer/Flyer'
 
 function Card({ closeModal, name }) {
   return (

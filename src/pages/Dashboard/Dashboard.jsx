@@ -1,13 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import './dashboard.css'
 
 const Dashboard = () => {
-    const [modalOpen, setModalOpen] = useState(false);
   return (
     <>
-        <div className='banner'>
+        <div className='home'>
           <Navbar />
             <div className='content1'>
                   <h1>VOTE DAUDA LAWAN DARE<br />FOR GOVERNOR</h1>
@@ -18,7 +17,7 @@ const Dashboard = () => {
                   </div>
               
               </div>
-        <Footer />
+          <Footer />
         </div>
         
     </>

@@ -3,16 +3,27 @@
     z-index: 1000;
     width: 150px;
     height: 45px;
-    /* margin: 10px; */
+    margin: auto;
     border: none;
     background-color: cornflowerblue;
     color: white;
     border-radius: 8px;
     font-size: 20px;
     cursor: pointer;
-    bottom: 7rem;
+    bottom: 4rem;
     left: 45rem;
 }
+@media screen and (max-width: 1024px) {
+    .screenBtn{
+        width: 130px;
+        height: 35px;
+        /* margin: 10px; */
+        font-size: 15px;
+        cursor: pointer;
+        bottom: 16rem;
+        left: 22rem;
+    }
+  }
 
 @media only screen and (min-width : 320px) and (max-width:600px) {
     .screenBtn{

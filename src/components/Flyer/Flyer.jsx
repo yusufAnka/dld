@@ -1,52 +1,43 @@
 import React from "react";
 import "./flyer.css";
-import IMG from '../../public/banner.jpeg';
+// import IMG from '../../public/banner2.png';
 import IMG2 from '../../public/pdp.png';
+import dauda from '../../public/d2.jpg';
 import Profile  from "../ProfileImg/Profile";
 
 function Flyer(props) {
   return (
-    <>
-    <div>
-        <div className="cardBody">
-          <div className='headers'>
-            <img className='dld2' src={IMG} alt="banner" />
-            <img className='pdp' src={IMG2} alt="banner" />
-          </div>
-          <div className="center">
-              <h4> MY NAME IS </h4>
-          </div>
-          <h2 className="name">{props.name} <br/> And I Will</h2>
-          <br/>
-          <p className="vote">VOTE</p>
-          
-          <div className="body">
-            <div className="left">
-            
+      <div className="cardBody">
+            <div className='hope'>
+                <h2 className="head">FACE OF <br/> HOPE <bold style={{color: 'red'}}>'23</bold></h2>
+                <img className='pdp' src={IMG2} alt="banner" />
+            </div>
+            {/* <div>
+              <img className='banner' src={IMG} />
+            </div> */}
+            <div className="note">
+                <i> " BE PART OF THE MOVES  <br />  
+                FOR A BETTER ZAMFARA ! "</i>
+            </div>
+            <div className="profileImage">
               <Profile />
-              <i className="better">Dauda For a <br />better Zamfara</i>
+              <div className="myName">
+                <h4> MY NAME IS </h4>
+                <h2 className="name">{props.name} <br/> And I Will</h2>
+                <br/>
+                
+              </div>
             </div>
-            <div className="right">
-             <p className="dauda">DAUDA LAWAN DARE <br /> For <br /> Governor 2023 </p>
-
+            <p className="vote">VOTE</p>
+            <div className="imageD">
+              <img className='dld2' src={dauda} alt="dauda" />
             </div>
-            
-          </div>
-        </div>
-        {/* <div className="footer">
-          <button
-            onClick={() => {
-              closeModal(false);
-            }}
-            id="cancelBtn"
-          >
-            Cancel
-          </button>
-          <button>Print</button>
-        </div> */}
+            <div className="governor">
+              <p>Dr. DAUDA LAWAL <i>(GAMJIN GUSAU) </i><br />
+              <i style={{color:'red'}}>For </i>GOVERNOR <br /> ZAMFARA STATE</p>
+            </div>
+              
       </div>
-
-    </>
   );
 }
 

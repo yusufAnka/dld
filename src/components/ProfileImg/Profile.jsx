@@ -31,8 +31,8 @@ const Profile = () => {
         <div className='profile'>
             <img 
             style={{
-                width: "150px",
-                height: "150px",
+                width: "180px",
+                height: "180px",
                 borderRadius: "50%",
                 objectFit: "cover",
                 border: "4px solid green",
