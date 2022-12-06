@@ -172,8 +172,8 @@
       position: relative;
       height: 250px;
       min-width: 0;
-      width: 150px;
-      margin: 3rem 0 0 2rem;
+      width: 160px;
+      margin: 3rem 0 0 3.5rem;
       float: right;
     }
     .note{
@@ -189,7 +189,7 @@
       
     }
     .vote{
-      margin-left: 15rem;
+      margin-left: 17rem;
       margin-top: 30rem;
     }
     .governor{
