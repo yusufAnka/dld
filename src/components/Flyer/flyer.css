@@ -162,11 +162,11 @@
     .head{
       display: inline-block;
       font-size: 10px;
-      font-weight:400;
+      font-weight:300;
     }
     .pdp{
-      width: 25px;
-      height: 25px;
+      width: 20px;
+      height: 20px;
     }
     .dld2{
       position: relative;
@@ -225,6 +225,6 @@
      
     }
     .name{
-      font-size: 10px;
+      font-size: 12px;
     }
   }
