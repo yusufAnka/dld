@@ -8,8 +8,8 @@
   --card-width : 820px;
   --card-height: 700px;
 
-  --flyer-width : 90%;
-  --flyer-height: 100%;
+  --flyer-width : 660;
+  --flyer-height: 520;
 
   --profile-width: 180px;
   --profile-height: 180px;
@@ -26,8 +26,8 @@
     --card-width: 90%;
     --card-height:70%;
 
-    --flyer-width : 95%;
-    --flyer-height:90%;
+    --flyer-width : 520;
+    --flyer-height:420;
 
     --profile-width: 180px;
     --profile-height: 180px;

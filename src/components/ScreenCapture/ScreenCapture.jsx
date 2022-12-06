@@ -5,7 +5,7 @@ import './screen.css';
 
 const ScreenCapture = ({name}) => {
     let ref = React.createRef();
-    const [width, setWidth] = React.useState()
+    const [width, setWidth] = React.useState('')
     const [height, setHeight] = React.useState()
 
     React.useEffect(() => {
@@ -15,7 +15,7 @@ const ScreenCapture = ({name}) => {
 
     }, [])
 
-  
+  console.log({width,height})
     let handleClickTakeScreenShot = async() => {
       const { cropPositionTop, cropPositionLeft, cropWidth, cropHeight } = {
         cropPositionTop: 0,
