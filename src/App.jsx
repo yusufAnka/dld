@@ -6,6 +6,7 @@ import LoginPage from './pages/Login';
 import Poster from './pages/Poster';
 import Portfolio from './components/Portfolio/Portfolio';
 import Profile from './components/ProfileImg/Profile';
+import Flyer from './pages/Flyer/Flyar';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/manifesto' element={<Portfolio />} />
         <Route path= '/poster' element={<Poster />} />
         <Route path= '/profile' element={<Profile />} />
+        <Route path= '/flyer' element={<Flyer />} />
       </Routes>
     </div>
   );

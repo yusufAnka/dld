@@ -48,7 +48,7 @@ const ScreenCapture = ({name}) => {
       return (
         <div>
           {/* {children} */}
-          <button className="screenBtn" onClick={handleClickTakeScreenShot}>Download Flyer</button>
+          <a href="/flyer"><button className="screenBtn" onClick={handleClickTakeScreenShot}>Download Flyer</button></a>
           <div
             id="#screenshot"
             // style={{ position: "relative", left: "-1000px" }}
