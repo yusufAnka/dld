@@ -10,7 +10,7 @@ const ScreenCapture = ({name}) => {
 
     React.useEffect(() => {
       // let w = 
-      setWidth(getComputedStyle(document.documentElement).getPropertyValue('--flyer-width').replace('px',''));
+      setWidth(getComputedStyle(document.documentElement).getPropertyValue('--flyer-width').replace('rem',''));
       setHeight(getComputedStyle(document.documentElement).getPropertyValue('--flyer-height').replace('px', ''));
 
     }, [])
@@ -48,7 +48,7 @@ const ScreenCapture = ({name}) => {
       return (
         <div>
           {/* {children} */}
-          <a href="/flyer"><button className="screenBtn" onClick={handleClickTakeScreenShot}>Download Flyer</button></a>
+          <button className="screenBtn" onClick={handleClickTakeScreenShot}>Download Flyer</button>
           <div
             id="#screenshot"
             // style={{ position: "relative", left: "-1000px" }}

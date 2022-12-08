@@ -1,9 +1,25 @@
-.print{
+/* .print{
     margin: auto;
-    /* left: 50%; */
-    /* right: 50%; */
-    min-width: 50%;
+    left: 50%;
+    right: 50%; 
+    width: 50%;
     top: 50%;
     bottom: 50%;
 
 }
+
+@media screen and (max-width: 1024px) {
+    .print{
+        min-width: 50%;
+        top: 50%;
+        bottom: 50%;
+    }
+  }
+
+  @media only screen and (max-width:600px) {
+    .print{
+        min-width: 50%;
+        top: 50%;
+        bottom: 50%;
+    }
+  } */
